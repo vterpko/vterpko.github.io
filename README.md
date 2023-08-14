@@ -1,1 +1,1 @@
-# vterpko.github.io
+# Vadym Terpko
