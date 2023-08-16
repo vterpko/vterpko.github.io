@@ -112,7 +112,7 @@ var name = {first:"Jane", last:"Doe"};  // object
 
 ```&```: The bitwise **AND** operator returns a 1 in every bit position where both operands' corresponding bits are 1.
 
-```|```:  The bitwise **OR** operator (|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.
+```\|```:  The bitwise **OR** operator (\|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.
 
 ```~```: The bitwise **NOT** operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.
 
