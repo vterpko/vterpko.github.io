@@ -7,3 +7,5 @@ Mail: vterpko@gmail.com
 
 ## Learning resources
 [JavaScript CheatSheet](https://vterpko.github.io/JavaScript_CheatSheet/)
+
+[test](test/test.txt)
