@@ -1,3 +1,9 @@
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8684781314803553"
+     crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://www.gstatic.com/images/icons/material/system/1x/person_black_48dp.png">
+</head>
+
 # Vadym Terpko
 
 ## Learning resources
