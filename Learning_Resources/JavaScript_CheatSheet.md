@@ -1,9 +1,7 @@
-<html>
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8684781314803553"
      crossorigin="anonymous"></script>
 </head>
-<body>
 
 # JavaScript CheatSheet
 
@@ -615,6 +613,3 @@ document.getElementById("demo").innerHTML=
 ```(?=abc)```: the pattern to the left will be matched only if 'abc' **follows**, but will not actually include 'abc'.
 
 ```(?!abc)```: the pattern to the left will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
-
-</body>
-</html>
