@@ -116,7 +116,7 @@ var name = {first:"Jane", last:"Doe"};  // object
 
 ```~```: The bitwise **NOT** operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.
 
-```^```: The bitwise **XOR** operator () returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.
+```^```: The bitwise **XOR** operator returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.
 
 ```<<```: The **left shift** operator shifts the first operand to the left by the provided number of bits. Extra bits that have been relocated to the left are discarded. From the right, zero bits are shifted in.
 
