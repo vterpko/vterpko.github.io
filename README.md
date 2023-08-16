@@ -1,219 +1,159 @@
-# JS {#js}
+# JS
 
+## Variables
 
-## Variables {#variables}
-
-
-#### Variable Types {#variable-types}
+#### Variable Types
 
 JavaScript Variables can be declared in 4 ways:
-
-
 
 * Automatically
 * Using **var** (should only be used in code written for older browsers)
 * Using **let**
 * Using **const**
 
-
-##### Var {#var}
-
+##### Var
 
 ```
 var x = 140; //  variable x can be reassigned a new value and also redeclared
 ```
 
-
-
-##### Let {#let}
-
+##### Let
 
 ```
 let x = 202; // variable x cannot be redeclared but can be reassigned a new value
 ```
 
-
-
-##### Const {#const}
-
+##### Const
 
 ```
 const x = 5; // variable x cannot be reassigned a new value or redeclared
 ```
 
+#### Data Types
 
+##### Primitive
 
-#### Data Types {#data-types}
-
-
-##### Primitive {#primitive}
-
-
-###### Number {#number}
-
+###### Number
 
 ```
 var age = 18;                           // number 
 ```
 
-
-
-###### String {#string}
-
+###### String
 
 ```
 var name = "Jane";                      // string
 ```
 
-
-
-###### Boolean {#boolean}
-
+###### Boolean
 
 ```
 var truth = false;                      // boolean
 ```
 
-
-
-###### Undefined {#undefined}
-
+###### Undefined
 
 ```
 var a; typeof a;                        // undefined
 ```
 
-
-
-###### Null {#null}
-
+###### Null
 
 ```
 var a = null;                           // value null
 ```
 
+##### Non Primitive
 
-
-##### Non Primitive {#non-primitive}
-
-
-###### Array {#array}
-
+###### Array
 
 ```
 var sheets = ["HTML","CSS","JS"];       // array
 ```
 
-
-
-###### Function {#function}
-
+###### Function
 
 ```
 var h = function(){};                   // function
 ```
 
-
-
-###### Object {#object}
-
+###### Object
 
 ```
 var name = {first:"Jane", last:"Doe"};  // object
 ```
 
+## Operators
 
+### Fundamental Operators
 
-## Operators {#operators}
+```+```: The **Addition** Operator is used to add two numbers
 
+```-```: The **Subtraction** Operator is used to subtract two numbers
 
-### Fundamental Operators {#fundamental-operators}
+```*```: The **Multiplication** Operator is used to multiply two numbers
 
-**+**: The **Addition** Operator is used to add two numbers
+```/```: The **Division** Operator is used to divide two numbers
 
-**-**: The **Subtraction** Operator is used to subtract two numbers
+```(...)```: This **Grouping** operator surrounds an expression or sub-expression with a pair of parentheses to override the conventional operator precedence.
 
-*****: The **Multiplication** Operator is used to multiply two numbers
+```%```: The **Modulus** operator is used to get the remainder when an integer number is divided by another integer number.
 
-**/**: The **Division** Operator is used to divide two numbers
+```++```: The **Increment** operator is used to increase the value of numbers by one.
 
-**(**...**)**: This **Grouping** operator surrounds an expression or sub-expression with a pair of parentheses to override the conventional operator precedence.
+```--```: The **Decrement** operator is used to decrease the value of numbers by one.
 
-**%**: The **Modulus** operator is used to get the remainder when an integer number is divided by another integer number.
+### Bitwise Operators
 
-**++**: The **Increment** operator is used to increase the value of numbers by one.
+```&```: The bitwise **AND** operator returns a 1 in every bit position where both operands' corresponding bits are 1.
 
-**--**: The **Decrement** operator is used to decrease the value of numbers by one.
+```|```:  The bitwise **OR** operator (|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.
 
+```~```: The bitwise **NOT** operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.
 
-### Bitwise Operators {#bitwise-operators}
+```^```: The bitwise **XOR** operator () returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.
 
-**&**: The bitwise **AND** operator returns a 1 in every bit position where both operands' corresponding bits are 1.
+```<<```: The **left shift** operator shifts the first operand to the left by the provided number of bits. Extra bits that have been relocated to the left are discarded. From the right, zero bits are shifted in.
 
-**|**:  The bitwise **OR** operator (|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.
+```>>```: The **right shift** operator moves the first operand to the right by the provided number of bits. Extra bits that have been relocated to the right are discarded.
 
-**~**: The bitwise **NOT** operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.
+### Comparison Operators
 
-**^**: The bitwise **XOR** operator () returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.
+```==```: The **equality** operator returns a Boolean value when its two operands are equal. It tries to convert and compare operands of different kinds, unlike the rigorous equivalent operator.
 
-**<&lt;**: The **left shift** operator shifts the first operand to the left by the provided number of bits. Extra bits that have been relocated to the left are discarded. From the right, zero bits are shifted in.
+```===```: The **equivalent** operator returns a Boolean value when its two operands are equal and they have the same type. It tries to convert and compare operands of the same kinds, unlike the equality operator.
 
-**>>**: The **right shift** operator moves the first operand to the right by the provided number of bits. Extra bits that have been relocated to the right are discarded.
+```!=```: The **inequality** operator returns a Boolean value if the two operands are not equal. It tries to convert and compare operands of different kinds, unlike the rigorous inequivalent operator.
 
+```!==```: The **inequivalent** operator returns a Boolean value if the two operands are not equal or they are not of the same type. It tries to convert and compare operands of the same kinds, unlike the inequality operator.
 
-### Comparison Operators {#comparison-operators}
+```?```: The **conditional** (ternary) operator is the only one in JavaScript that takes three operands: a condition followed by a question mark (? ), an expression to execute if the condition is true followed by a colon (:), and lastly an expression to execute if the condition is false. As an alternative to an if...else statement, this operator is commonly used.
 
-**==**: The **equality** operator returns a Boolean value when its two operands are equal. It tries to convert and compare operands of different kinds, unlike the rigorous equivalent operator.
+```>```: The **Greater** than operator returns true if the operand to its left is greater in value than the operand to its right.
 
-**===**: The **equivalent** operator returns a Boolean value when its two operands are equal and they have the same type. It tries to convert and compare operands of the same kinds, unlike the equality operator.
+```<```: The **Lesser** than operator returns true if the operand to its left is lesser in value than the operand to its right.
 
-**!=**: The **inequality** operator returns a Boolean value if the two operands are not equal. It tries to convert and compare operands of different kinds, unlike the rigorous inequivalent operator.
+```>=```: The **Greater** than equals to operator returns true if the operand to its left is greater in value or equal in value than the operand to its right.
 
-**!==**: The **inequivalent** operator returns a Boolean value if the two operands are not equal or they are not of the same type. It tries to convert and compare operands of the same kinds, unlike the inequality operator.
+```<=```: The **Lesser** than equals to operator returns true if the operand to its left is lesser in value or equal in value than the operand to its right.
 
+### Logical Operators
 
+```&&```: If and only if all of the operands are true, the **logical AND** operator (logical conjunction) for a set of Boolean operands is true. It will be false if it is not. When evaluating from left to right, the operator returns the value of the first falsy operand encountered, or the value of the last operand if all operands are truth.
 
-**** The **conditional** (ternary) operator is the only one in JavaScript that takes three operands: a condition followed by a question mark (? ), an expression to execute if the condition is true followed by a colon (:), and lastly an expression to execute if the condition is false. As an alternative to an if...else statement, this operator is commonly used.
+```||```: If and only if one or more of its operands are true, the **logical OR** operator (logical disjunction) is true for a set of operands. It's most often used with logical (Boolean) values. It returns a Boolean value when this is the case. The || operator, on the other hand, returns the value of one of the provided operands, hence using it with non-Boolean values will result in an error.
 
+```!```: The logical NOT operator (logical complement, negation) converts truth to falsity. It's most commonly used with logical (Boolean) values. It returns false if its sole operand can be transformed to true when used with non-Boolean values; otherwise, it returns true.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: Definition term(s) &uarr;&uarr; missing definition? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+## Control Flows
 
-
-
-
-
-
-**>**: The **Greater** than operator returns true if the operand to its left is greater in value than the operand to its right.
-
-**&lt;**: The **Lesser** than operator returns true if the operand to its left is lesser in value than the operand to its right.
-
-**>=**: The **Greater** than equals to operator returns true if the operand to its left is greater in value or equal in value than the operand to its right.
-
-**&lt;=**: The **Lesser** than equals to operator returns true if the operand to its left is lesser in value or equal in value than the operand to its right.
-
-
-### Logical Operators {#logical-operators}
-
-**&&**: If and only if all of the operands are true, the **logical AND** operator (logical conjunction) for a set of Boolean operands is true. It will be false if it is not. When evaluating from left to right, the operator returns the value of the first falsy operand encountered, or the value of the last operand if all operands are truth.
-
-**||**: If and only if one or more of its operands are true, the **logical OR** operator (logical disjunction) is true for a set of operands. It's most often used with logical (Boolean) values. It returns a Boolean value when this is the case. The || operator, on the other hand, returns the value of one of the provided operands, hence using it with non-Boolean values will result in an error.
-
-**!**: The logical NOT operator (logical complement, negation) converts truth to falsity. It's most commonly used with logical (Boolean) values. It returns false if its sole operand can be transformed to true when used with non-Boolean values; otherwise, it returns true.
-
-
-## Control Flows {#control-flows}
-
-
-### If {#if}
-
+### If
 
 ```
 if (hour < 18) {
   greeting = "Good day";
 }
 ```
-
-
 
 ```
 if (hour < 18) {
@@ -222,8 +162,6 @@ if (hour < 18) {
   greeting = "Good evening";
 }
 ```
-
-
 
 ```
 if (time < 10) {
@@ -235,10 +173,7 @@ if (time < 10) {
 }
 ```
 
-
-
-### Switch {#switch}
-
+### Switch
 
 ```
 switch (new Date().getDay()) {
@@ -265,18 +200,15 @@ switch (new Date().getDay()) {
 }
 ```
 
+### Exceptions
 
+```try```: We can define a code block for testing errors using the try block.
 
-### Exceptions {#exceptions}
+```catch```; We can set up a block of code to execute in the event of an error using the catch statement. 
 
-**try**: We can define a code block for testing errors using the try block.
+```throw```: Instead of the typical JavaScript errors, we can also create custom error messages using the throw statement.
 
-**catch**; We can set up a block of code to execute in the event of an error using the catch statement. 
-
-**throw**: Instead of the typical JavaScript errors, we can also create custom error messages using the throw statement.
-
-**finally**: JavaScript also allows us to run our code regardless of the outcome of try and catch.
-
+```finally```: JavaScript also allows us to run our code regardless of the outcome of try and catch.
 
 ```
 function myFunction() {
@@ -299,9 +231,7 @@ function myFunction() {
 }
 ```
 
-
-
-#### Types of Errors {#types-of-errors}
+#### Types of Errors
 
 **EvalError**: It indicates that an error has occurred within the eval() method.
 
@@ -315,12 +245,9 @@ function myFunction() {
 
 **URIError**:  It indicates that an encodeURI() error was occurring.
 
+## Loops
 
-## Loops {#loops}
-
-
-### For {#for}
-
+### For
 
 ```
 for (let i = 0; i < 5; i++) {
@@ -328,12 +255,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-
-
-### For In {#for-in}
+### For In
 
 The JavaScript for-in statement loops through the properties of an Object.
-
 
 ```
 // iterate over object
@@ -345,8 +269,6 @@ for (let x in person) {
 }
 ```
 
-
-
 ```
 // iterate over array
 const numbers = [45, 4, 9, 16, 25];
@@ -357,12 +279,9 @@ for (let x in numbers) {
 }
 ```
 
-
-
-### For Of {#for-of}
+### For Of
 
 The JavaScript for-of statement loops through the values of an iterable object.
-
 
 ```
 // iterate over array
@@ -374,8 +293,6 @@ for (let x of cars) {
 }
 ```
 
-
-
 ```
 // iterate over string
 let language = "JavaScript";
@@ -386,10 +303,7 @@ for (let x of language) {
 }
 ```
 
-
-
-### While {#while}
-
+### While
 
 ```
 while (i < 10) {
@@ -398,10 +312,7 @@ while (i < 10) {
 }
 ```
 
-
-
-### Do-While {#do-while}
-
+### Do-While
 
 ```
 do {
@@ -411,12 +322,9 @@ do {
 while (i < 10);
 ```
 
-
-
-### Statements {#statements}
+### Statements
 
 The **break** statement can also be used to jump out of a loop.
-
 
 ```
 for (let i = 0; i < 10; i++) {
@@ -425,9 +333,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-
 The **continue** statement breaks one iteration (in the loop), and continues with the next iteration in the loop.
-
 
 ```
 for (let i = 0; i < 10; i++) {
@@ -436,10 +342,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-
-
-## Functions {#functions}
-
+## Functions
 
 ```
 function addNumbers(a, b) {
@@ -449,10 +352,7 @@ function addNumbers(a, b) {
 x = addNumbers(1, 2);
 ```
 
-
-
-## Classes {#classes}
-
+## Classes
 
 ```
 class Car {
@@ -473,270 +373,238 @@ document.getElementById("demo").innerHTML=
 "My car is " + myCar.age(year) + " years old.";
 ```
 
+## Built-ins
 
+### Globals
 
-## Built-ins {#built-ins}
+### Time
 
+#### Get
 
-### Globals {#globals}
+```getFullYear()```: Get year as a four digit number (yyyy)
 
+```getMonth()```: Get month as a number (0-11)
 
-### Time {#time}
+```getDate()```: Get day as a number (1-31)
 
+```getDay()```: Get weekday as a number (0-6)
 
-#### Get {#get}
+```getHours()```: Get hour (0-23)
 
-**getFullYear()**: Get year as a four digit number (yyyy)
+```getMinutes()```: Get minute (0-59)
 
-**getMonth()**: Get month as a number (0-11)
+```getSeconds()```: Get second (0-59)
 
-**getDate()**: Get day as a number (1-31)
+```getMilliseconds()```: Get millisecond (0-999)
 
-**getDay()**: Get weekday as a number (0-6)
+```getTime()```: Get time (milliseconds since January 1, 1970)
 
-**getHours()**: Get hour (0-23)
+#### Set
 
-**getMinutes()**: Get minute (0-59)
+```setDate()```: Set the day as a number (1-31)
 
-**getSeconds()**: Get second (0-59)
+```setFullYear()```: Set the year (optionally month and day)
 
-**getMilliseconds()**: Get millisecond (0-999)
+```setHours()```: Set the hour (0-23)
 
-**getTime()**: Get time (milliseconds since January 1, 1970)
+```setMilliseconds()```: Set the milliseconds (0-999)
 
+```setMinutes()```: Set the minutes (0-59)
 
-#### Set {#set}
+```setMonth()```: Set the month (0-11)
 
-**setDate()**: Set the day as a number (1-31)
+```setSeconds()```: Set the seconds (0-59)
 
-**setFullYear()**: Set the year (optionally month and day)
+```setTime()```: Set the time (milliseconds since January 1, 1970)
 
-**setHours()**: Set the hour (0-23)
+### Data Output
 
-**setMilliseconds()**: Set the milliseconds (0-999)
+```prompt()```: This function is used for creating a dialogue box for taking input from the user.
 
-**setMinutes()**: Set the minutes (0-59)
+```alert()```: This function is used for outputting information in an alert box in the browser window.
 
-**setMonth()**: Set the month (0-11)
+```console.log()```: This function is used for writing data to the browser's console and is used for the purpose of debugging code by developers.
 
-**setSeconds()**: Set the seconds (0-59)
+```document.write()```: This function is used for writing straight to our HTML document.
 
-**setTime()**: Set the time (milliseconds since January 1, 1970)
+```confirm()```: This function is used for opening up a yes or no dialogue box and for returning a boolean value depending upon the user's click.
 
+### Numbers
 
-### Data Output {#data-output}
+#### Methods
 
-**prompt()**: This function is used for creating a dialogue box for taking input from the user.
+```toString()```: Returns a number as a string.
 
-**alert()**: This function is used for outputting information in an alert box in the browser window.
+```toExponential()```: Returns a number written in exponential notation.
 
-**console.log()**: This function is used for writing data to the browser's console and is used for the purpose of debugging code by developers.
+```toFixed()```: Returns a number written with a number of decimals.
 
-**document.write()**: This function is used for writing straight to our HTML document.
+```toPrecision()```: Returns a number written with a specified length.
 
-**confirm()**: This function is used for opening up a yes or no dialogue box and for returning a boolean value depending upon the user's click.
+```ValueOf()```: Returns a number as a number.
 
+### Strings
 
-### Numbers {#numbers}
+#### Escape chars
 
+```\'```: Single quotes
 
-#### Methods {#methods}
+```\"```: Double quotes
 
-**toString()**: Returns a number as a string.
+```\t```: Horizontal tab
 
-**toExponential()**: Returns a number written in exponential notation.
+```\v```: Vertical tab
 
-**toFixed()**: Returns a number written with a number of decimals.
+```\\```: Backslash
 
-**toPrecision()**: Returns a number written with a specified length.
+```\b```: Backspace
 
-**ValueOf()**: Returns a number as a number.
+```\f```: Form feed
 
+```\n```: Newline
 
-### Strings {#strings}
+```\r```: Carriage return
 
+#### Methods
 
-#### Escape chars {#escape-chars}
+```toLowerCase()```: This method is used for converting strings to lower case.
 
-**\'**: Single quotes
+```toUpperCase()```: This method is used for converting strings to upper case.
 
-**\"**: Double quotes
+```charAt()```: This method is used for returning the character at a particular index of a string.
 
-**\t**: Horizontal tab
+```charCodeAt()```: This method is used for returning to us the Unicode of the character at a  given index.
 
-**\v**: Vertical tab
+```fromCharCode()```: This method is used for returning a string made from a particular sequence of UTF-16 code units.
 
-**\\**: Backslash
+```concat()```: This method is used for concatenating or joining multiple strings into a single string.
 
-**\b**: Backspace
+```match()```: This method is used for retrieving the matches of a string against a pattern string which is provided.
 
-**\f**: Form feed
+```replace()```: This method is used for finding and replacing a given text in the string.
 
-**\n**: Newline
+```indexOf()```: This method is used for providing the index of the first appearance of a given text inside the string.
 
-**\r**: Carriage return
+```lastIndexOf()```: This method is similar to the indexOf() methods and only differs in the fact that it searches for the last occurrence of the character and searches backwards.
 
+```search()```: This method is used for executing a search for a matching text and returning the index of the searched string.
 
-#### Methods {#methods}
+```substr()```: This method is pretty much the same as the slice() method but the extraction of a substring in it depends on a given number of characters.
 
-**toLowerCase()**: This method is used for converting strings to lower case.
+```slice()```: This method is used for extracting an area of the string and returning it.
 
-**toUpperCase()**: This method is used for converting strings to upper case.
+```split()```: This method is used for splitting a string object into an array of strings at a particular index.
 
-**charAt()**: This method is used for returning the character at a particular index of a string.
+```substring()```: Even this method is almost the same as the slice() method but it does not allow negative positions.
 
-**charCodeAt()**: This method is used for returning to us the Unicode of the character at a  given index.
+```valueOf()```: This method is used for returning the primitive value (one without any properties or methods) of a string object.
 
-**fromCharCode()**: This method is used for returning a string made from a particular sequence of UTF-16 code units.
+### Arrays
 
-**concat()**: This method is used for concatenating or joining multiple strings into a single string.
+#### Methods
 
-**match()**: This method is used for retrieving the matches of a string against a pattern string which is provided.
+```pop()```: This method is used for removing the last element of an array.
 
-**replace()**: This method is used for finding and replacing a given text in the string.
+```push()```: This method is used for adding a new element at the very end of an array.
 
-**indexOf()**: This method is used for providing the index of the first appearance of a given text inside the string.
+```concat()```: This method is used for joining various arrays into a single array.
 
-**lastIndexOf()**: This method is similar to the indexOf() methods and only differs in the fact that it searches for the last occurrence of the character and searches backwards.
+```reverse()```: This method is used for reversing the order of the elements in an array.
 
-**search()**: This method is used for executing a search for a matching text and returning the index of the searched string.
+```shift()```: This method is used for removing the first element of an array.
 
-**substr()**: This method is pretty much the same as the slice() method but the extraction of a substring in it depends on a given number of characters.
+```slice()```: This method is used for pulling a copy of a part of an array into a new array.
 
-**slice()**: This method is used for extracting an area of the string and returning it.
+```splice()```: This method is used for adding elements in a particular way and position.
 
-**split()**: This method is used for splitting a string object into an array of strings at a particular index.
+```toString()```: This method is used for converting the array elements into strings.
 
-**substring()**: Even this method is almost the same as the slice() method but it does not allow negative positions.
+```unshift()```: This method is used for adding new elements at the beginning of the array.
 
-**valueOf()**: This method is used for returning the primitive value (one without any properties or methods) of a string object.
+```valueOf()```: This method is used for returning the primitive value of the given object.
 
+```indexOf()```: This method is used for returning the first index at which a given element is found in an array.
 
-### Arrays {#arrays}
+```lastIndexOf()```: This method is used for returning the final index at which a given element appears in an array.
 
+```join()```: This method is used for combining elements of an array into one single string and then returning it.
 
-#### Methods {#methods}
+```sort()```: This method is used for sorting the array elements based on some condition.
 
-**pop()**: This method is used for removing the last element of an array.
+## Regular Expressions
 
-**push()**: This method is used for adding a new element at the very end of an array.
+### Characters
 
-**concat()**: This method is used for joining various arrays into a single array.
+```.```: any **single character** (dot).
 
-**reverse()**: This method is used for reversing the order of the elements in an array.
+```\s```: **whitespace** character.
 
-**shift()**: This method is used for removing the first element of an array.
+```\S```: **non-whitespace** character.
 
-**slice()**: This method is used for pulling a copy of a part of an array into a new array.
+```\d```: **digit** character.
 
-**splice()**: This method is used for adding elements in a particular way and position.
+```\D```: **non-digit** character.
 
-**toString()**: This method is used for converting the array elements into strings.
+```\w```: **word.**
 
-**unshift()**: This method is used for adding new elements at the beginning of the array.
+```\W```: **non-word.**
 
-**valueOf()**: This method is used for returning the primitive value of the given object.
+```\t```: horizontal tab.
 
-**indexOf()**: This method is used for returning the first index at which a given element is found in an array.
+```\v```: vertical tab.
 
-**lastIndexOf()**: This method is used for returning the final index at which a given element appears in an array.
+```\b```: backspace.
 
-**join()**: This method is used for combining elements of an array into one single string and then returning it.
+```\f```: form feed.
 
-**sort()**: This method is used for sorting the array elements based on some condition.
+```\n```: newline.
 
+```\r```: carriage return.
 
-## Regular Expressions {#regular-expressions}
+### Ranges
 
+```[abc]```: a single character **a b** or **c.**
 
-### Characters {#characters}
+```[0-9]```: a character in range **0 through 9.**
 
-**.**: any **single character** (dot).
+```[a-z]```: a character in range **a through z.**
 
-**\s**: **whitespace** character.
+```[a-zA-Z]```: a character in range **a through z and A through Z.**
 
-**\S**: **non-whitespace** character.
+```[^abc]```: any character **except a b** or **c.**
 
-**\d**: **digit** character.
+```[^a-z]```: any character **except** in range **a through z.**
 
-**\D**: **non-digit** character.
+```[^0-9]```: any character **except** in range **0 through 9.**
 
-**\w**: **word.**
+### Quantifiers
 
-**\W**: **non-word.**
+```*```: **0** or **more** of the previous (**greedy** - matches as much as possible).
 
-**\t**: horizontal tab.
+```?```: **0** or **more** of the previous (**lazy** - matches as few as possible).
 
-**\v**: vertical tab.
+```+```: **1** or **more** of the previous.
 
-**\b**: backspace.
+```{3}```: **exactly 3** of the previous.
 
-**\f**: form feed.
+```{3,}```: **from 3** of the previous (3 or more).
 
-**\n**: newline.
+```{3,6}```: from **3 to 6** of the previous.
 
-**\r**: carriage return.
+### Anchors
 
+```^```: **start** of string.
 
-### Ranges {#ranges}
+```$```: **end** of string.
 
-**[abc]**: a single character **a b** or **c.**
+### Grouping
 
-**[0-9]**: a character in range **0 through 9.**
+```|```: match either construct before **OR** after.
 
-**[a-z]**: a character in range **a through z.**
+```(abc)```: isolates part of the full match to be later referred to by ID within the regex or the matches array (IDs start at 1).
 
-**[a-zA-Z]**: a character in range **a through z and A through Z.**
+```(?:ab{2}c{3})```: allows you to **apply quantifiers** to part of your regex. Will match 'abbccc'.
 
-**[^abc]**: any character **except a b** or **c.**
+```(?=abc)```: the pattern to the left will be matched only if 'abc' **follows**, but will not actually include 'abc'.
 
-**[^a-z]**: any character **except** in range **a through z.**
-
-**[^0-9]**: any character **except** in range **0 through 9.**
-
-
-### Quantifiers {#quantifiers}
-
-*****: **0** or **more** of the previous (**greedy** - matches as much as possible).
-
-***?**: **0** or **more** of the previous (**lazy** - matches as few as possible).
-
-
-
-**** **0** or **1** or previous.
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: Definition term(s) &uarr;&uarr; missing definition? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-
-
-**+**: **1** or **more** of the previous.
-
-**{3}**: **exactly 3** of the previous.
-
-**{3,}**: **from 3** of the previous (3 or more).
-
-**{3,6}**: from **3 to 6** of the previous.
-
-
-### Anchors {#anchors}
-
-**^**: **start** of string.
-
-**$**: **end** of string.
-
-
-### Grouping {#grouping}
-
-**|**: match either construct before **OR** after.
-
-**(abc)**: isolates part of the full match to be later referred to by ID within the regex or the matches array (IDs start at 1).
-
-**(?:ab{2}c{3})**: allows you to **apply quantifiers** to part of your regex. Will match 'abbccc'.
-
-**(?=abc)**: the pattern to the left will be matched only if 'abc' **follows**, but will not actually include 'abc'.
-
-**(?!abc)**: the pattern to the left will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
+```(?!abc)```: the pattern to the left will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
