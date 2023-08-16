@@ -6,7 +6,8 @@
 # Vadym Terpko
 
 ## Learning resources
-[**JavaScript CheatSheet**](Learning_Resources/JavaScript_CheatSheet.md)
+[**JavaScript CheatSheet**](Learning_Resources/JavaScript_CheatSheet)
+[**Git**](https://vterpko.github.io/Learning_Resources/Git/Git)
 
 ## Contact Info
 #### Mail: <a href="mailto:vterpko@gmail.com">vterpko@gmail.com<a>
