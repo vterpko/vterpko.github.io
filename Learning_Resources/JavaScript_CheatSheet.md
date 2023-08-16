@@ -613,3 +613,7 @@ document.getElementById("demo").innerHTML=
 ```(?=abc)```: the pattern to the left will be matched only if 'abc' **follows**, but will not actually include 'abc'.
 
 ```(?!abc)```: the pattern to the left will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
+
+***
+
+[Buy me a Coffee](https://www.buymeacoffee.com/vterpko)
