@@ -146,7 +146,7 @@ var name = {first:"Jane", last:"Doe"};  // object
 
 ```&&```: If and only if all of the operands are true, the **logical AND** operator (logical conjunction) for a set of Boolean operands is true. It will be false if it is not. When evaluating from left to right, the operator returns the value of the first falsy operand encountered, or the value of the last operand if all operands are truth.
 
-```\|\|```: If and only if one or more of its operands are true, the **logical OR** operator (logical disjunction) is true for a set of operands. It's most often used with logical (Boolean) values. It returns a Boolean value when this is the case. The || operator, on the other hand, returns the value of one of the provided operands, hence using it with non-Boolean values will result in an error.
+```\|\|```: If and only if one or more of its operands are true, the **logical OR** operator (logical disjunction) is true for a set of operands. It's most often used with logical (Boolean) values. It returns a Boolean value when this is the case. The \|\| operator, on the other hand, returns the value of one of the provided operands, hence using it with non-Boolean values will result in an error.
 
 ```!```: The logical NOT operator (logical complement, negation) converts truth to falsity. It's most commonly used with logical (Boolean) values. It returns false if its sole operand can be transformed to true when used with non-Boolean values; otherwise, it returns true.
 
