@@ -1,4 +1,4 @@
-[**HOME**](https://vterpko.github.io/)
+[**HOME**](/)
 
 # Awk OneLiners
 

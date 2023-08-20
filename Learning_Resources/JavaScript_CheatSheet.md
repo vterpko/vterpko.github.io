@@ -3,7 +3,7 @@
      crossorigin="anonymous"></script>
 </head>
 
-[**HOME**](https://vterpko.github.io/)
+[**HOME**](/)
 
 # JavaScript CheatSheet
 
