@@ -1,6 +1,3 @@
-*
-{:toc}
-
 [**HOME**](https://vterpko.github.io/)
 
 # Awk OneLiners
