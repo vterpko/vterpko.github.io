@@ -11,4 +11,4 @@
 #### [**Awk OneLiners**](Learning_Resources/Awk_Oneliners)
 
 ## Contact Info
-#### Mail: <a href="mailto:vterpko@gmail.com">vterpko@gmail.com<a>
+#### Mail: <a href="mailto:vterpko+productivepathways@gmail.com">vterpko@gmail.com<a>
