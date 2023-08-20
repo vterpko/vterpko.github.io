@@ -1,8 +1,3 @@
-<head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8684781314803553"
-     crossorigin="anonymous"></script>
-</head>
-
 [**HOME**](https://vterpko.github.io/)
 
 # JavaScript CheatSheet
@@ -385,6 +380,8 @@ document.getElementById("demo").innerHTML=
 ### Globals
 
 ### Time
+
+```const date = new Date();```
 
 #### Get
 
