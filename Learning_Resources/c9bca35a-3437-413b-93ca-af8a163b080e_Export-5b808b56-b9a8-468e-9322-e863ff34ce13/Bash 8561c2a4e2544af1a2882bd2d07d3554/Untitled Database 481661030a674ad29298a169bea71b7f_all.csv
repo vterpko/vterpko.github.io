@@ -1,9 +1,0 @@
-﻿Name,Alternative,Description
-echo ${variable},,Print the variable as is
-echo ${variable:0:2},echo ${variable:num_var1:num_var2},From index 0 print 2 indexes
-echo ${variable::2},echo ${variable::num_var},From index 0 print 2 indexes
-echo ${variable:6:5},echo ${variable:num_var1:num_var2},From index 6 print 5 indexes
-echo ${variable::-2},echo ${variable::-num_var},From index 0 print until 2 last indexes
-echo ${variable:(-4)},echo ${variable::(-num_var)},From last 4 indexes print till the end
-echo ${variable:(-4):2},echo ${variable::(-num_var1):num_var2},From last 4 indexes print 2 indexes
-echo ${#variable},,Print the variable length

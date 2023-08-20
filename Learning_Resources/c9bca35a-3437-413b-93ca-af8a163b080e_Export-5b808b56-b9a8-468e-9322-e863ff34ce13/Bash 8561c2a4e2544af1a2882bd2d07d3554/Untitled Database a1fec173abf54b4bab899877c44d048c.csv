@@ -1,5 +1,0 @@
-﻿Name,Description
-"array=(""value1"" ""value2"" ""value3"")",Define array
-"array=(""${array[*]}"" ""value4"")",Add a variable to an array
-"array+=(""value5"")",Add a variable to an array
-"array[2]=""value""",Change a value

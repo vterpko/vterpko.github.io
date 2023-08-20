@@ -1,3 +1,0 @@
-﻿Condition,Description
-[ condition1 ] && [ condition2 ],both conditions have to be true
-[ condition1 ] || [ condition2 ],any of the conditions has to be true

@@ -1,5 +1,0 @@
-﻿Name,Description
-set -x,Print commands as they are executed (debug mode)
-set -u,Exit the script if any of the variables is unset
-set -e,Exit the script if any error occurs
-set -- one two three,Set positional arguments ($1 $2 $3)

@@ -1,9 +1,0 @@
-﻿Name,Description
-echo ${variable%suffix},Remove suffix
-echo ${variable%%suffix},Remove long suffix
-echo ${variable#prefix},Remove prefix
-echo ${variable##prefix},Remove long prefix
-echo ${variable/from/to},Replace first match
-echo ${variable//from/to},Replace all
-echo ${variable/%from/to},Replace suffix
-echo ${variable/#from/to},Replace prefix

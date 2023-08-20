@@ -3,7 +3,7 @@
 ## Learning resources
 ### CheatSheets
 [**JavaScript CheatSheet**](Learning_Resources/JavaScript_CheatSheet)
-[**Bash CheatSheet**](Learning_Resources/c9bca35a-3437-413b-93ca-af8a163b080e_Export-5b808b56-b9a8-468e-9322-e863ff34ce13/Bash%208561c2a4e2544af1a2882bd2d07d3554)
+[**Bash CheatSheet**](Learning_Resources/Bash_CheatSheet)
 
 ## Contact Info
 #### Mail: <a href="mailto:vterpko@gmail.com">vterpko@gmail.com<a>
