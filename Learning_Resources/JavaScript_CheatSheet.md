@@ -15,19 +15,19 @@ JavaScript Variables can be declared in 4 ways:
 
 ##### Var
 
-```
+```javascript
 var x = 140; //  variable x can be reassigned a new value and also redeclared
 ```
 
 ##### Let
 
-```
+```javascript
 let x = 202; // variable x cannot be redeclared but can be reassigned a new value
 ```
 
 ##### Const
 
-```
+```javascript
 const x = 5; // variable x cannot be reassigned a new value or redeclared
 ```
 
@@ -37,31 +37,31 @@ const x = 5; // variable x cannot be reassigned a new value or redeclared
 
 ###### Number
 
-```
+```javascript
 var age = 18;                           // number 
 ```
 
 ###### String
 
-```
+```javascript
 var name = "Jane";                      // string
 ```
 
 ###### Boolean
 
-```
+```javascript
 var truth = false;                      // boolean
 ```
 
 ###### Undefined
 
-```
+```javascript
 var a; typeof a;                        // undefined
 ```
 
 ###### Null
 
-```
+```javascript
 var a = null;                           // value null
 ```
 
@@ -69,19 +69,19 @@ var a = null;                           // value null
 
 ###### Array
 
-```
+```javascript
 var sheets = ["HTML","CSS","JS"];       // array
 ```
 
 ###### Function
 
-```
+```javascript
 var h = function(){};                   // function
 ```
 
 ###### Object
 
-```
+```javascript
 var name = {first:"Jane", last:"Doe"};  // object
 ```
 
@@ -151,13 +151,13 @@ var name = {first:"Jane", last:"Doe"};  // object
 
 ### If
 
-```
+```javascript
 if (hour < 18) {
   greeting = "Good day";
 }
 ```
 
-```
+```javascript
 if (hour < 18) {
   greeting = "Good day";
 } else {
@@ -165,7 +165,7 @@ if (hour < 18) {
 }
 ```
 
-```
+```javascript
 if (time < 10) {
   greeting = "Good morning";
 } else if (time < 20) {
@@ -177,7 +177,7 @@ if (time < 10) {
 
 ### Switch
 
-```
+```javascript
 switch (new Date().getDay()) {
   case 0:
     day = "Sunday";
@@ -212,7 +212,7 @@ switch (new Date().getDay()) {
 
 ```finally```: JavaScript also allows us to run our code regardless of the outcome of try and catch.
 
-```
+```javascript
 function myFunction() {
   const message = document.getElementById("p01");
   message.innerHTML = "";
@@ -251,7 +251,7 @@ function myFunction() {
 
 ### For
 
-```
+```javascript
 for (let i = 0; i < 5; i++) {
   text += "The number is " + i + "<br>";
 }
@@ -261,7 +261,7 @@ for (let i = 0; i < 5; i++) {
 
 The JavaScript for-in statement loops through the properties of an Object.
 
-```
+```javascript
 // iterate over object
 const person = {fname:"John", lname:"Doe", age:25};
 
@@ -271,7 +271,7 @@ for (let x in person) {
 }
 ```
 
-```
+```javascript
 // iterate over array
 const numbers = [45, 4, 9, 16, 25];
 
@@ -285,7 +285,7 @@ for (let x in numbers) {
 
 The JavaScript for-of statement loops through the values of an iterable object.
 
-```
+```javascript
 // iterate over array
 const cars = ["BMW", "Volvo", "Mini"];
 
@@ -295,7 +295,7 @@ for (let x of cars) {
 }
 ```
 
-```
+```javascript
 // iterate over string
 let language = "JavaScript";
 
@@ -307,7 +307,7 @@ for (let x of language) {
 
 ### While
 
-```
+```javascript
 while (i < 10) {
   text += "The number is " + i;
   i++;
@@ -316,7 +316,7 @@ while (i < 10) {
 
 ### Do-While
 
-```
+```javascript
 do {
   text += "The number is " + i;
   i++;
@@ -328,7 +328,7 @@ while (i < 10);
 
 The **break** statement can also be used to jump out of a loop.
 
-```
+```javascript
 for (let i = 0; i < 10; i++) {
   if (i === 3) { break; }
   text += "The number is " + i + "<br>";
@@ -337,7 +337,7 @@ for (let i = 0; i < 10; i++) {
 
 The **continue** statement breaks one iteration (in the loop), and continues with the next iteration in the loop.
 
-```
+```javascript
 for (let i = 0; i < 10; i++) {
   if (i === 3) { continue; }
   text += "The number is " + i + "<br>";
@@ -346,7 +346,7 @@ for (let i = 0; i < 10; i++) {
 
 ## Functions
 
-```
+```javascript
 function addNumbers(a, b) {
   return a + b; ;
 }
@@ -356,7 +356,7 @@ x = addNumbers(1, 2);
 
 ## Classes
 
-```
+```javascript
 class Car {
   constructor(name, year) {
     this.name = name;
