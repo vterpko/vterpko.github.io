@@ -1,0 +1,11 @@
+﻿Condition,Description
+[ $num1 -eq $num2 ],$num1 and $num2 are equal
+[ $num1 -ne $num2 ],$num1 and $num2 are not equal
+[ $num1 -lt $num2 ],$num1 is less than $num2
+[ $num1 -le $num2 ],$num1 is less than or equal to $num2
+[ $num1 -gt $num2 ],$num1 is greater than $num2
+[ $num1 -ge $num2 ],$num1 is greater than or equal to $num2
+[ -z $var ],$var is empty
+[ -n $var ],$var is not empty
+[ string1 = string2 ],string1 and string2 are equal
+[ string1 != string2 ],string1 and string2 are not equal
