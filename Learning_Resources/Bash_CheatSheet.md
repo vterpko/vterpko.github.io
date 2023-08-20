@@ -5,7 +5,7 @@
 
 [**HOME**](https://vterpko.github.io/)
 
-[TOC]
+{:toc}
 
 # Bash CheatSheet
 
