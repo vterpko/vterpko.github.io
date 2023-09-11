@@ -110,20 +110,6 @@ var name = {first:"Jane", last:"Doe"};  // object
 
 ```--```: The **Decrement** operator is used to decrease the value of numbers by one.
 
-### Bitwise Operators
-
-```&```: The bitwise **AND** operator returns a 1 in every bit position where both operands' corresponding bits are 1.
-
-```\|```:  The bitwise **OR** operator (\|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.
-
-```~```: The bitwise **NOT** operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.
-
-```^```: The bitwise **XOR** operator returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.
-
-```<<```: The **left shift** operator shifts the first operand to the left by the provided number of bits. Extra bits that have been relocated to the left are discarded. From the right, zero bits are shifted in.
-
-```>>```: The **right shift** operator moves the first operand to the right by the provided number of bits. Extra bits that have been relocated to the right are discarded.
-
 ### Comparison Operators
 
 ```==```: The **equality** operator returns a Boolean value when its two operands are equal. It tries to convert and compare operands of different kinds, unlike the rigorous equivalent operator.
@@ -542,33 +528,31 @@ document.getElementById("demo").innerHTML=
 
 ## Regular Expressions
 
-### Characters
+### Basic
 
 ```.```: any **single character** (dot).
 
-```\s```: **whitespace** character.
+```|```: match either construct before **OR** after.
 
-```\S```: **non-whitespace** character.
+### Anchors
 
-```\d```: **digit** character.
+```^```: **start** of string.
 
-```\D```: **non-digit** character.
+```$```: **end** of string.
 
-```\w```: **word.**
+### Quantifiers
 
-```\W```: **non-word.**
+```*```: **0** or **more** of the previous (**greedy** - matches as much as possible).
 
-```\t```: horizontal tab.
+```?```: **0** or **more** of the previous (**lazy** - matches as few as possible).
 
-```\v```: vertical tab.
+```+```: **1** or **more** of the previous.
 
-```\b```: backspace.
+```{3}```: **exactly 3** of the previous.
 
-```\f```: form feed.
+```{3,}```: **from 3** of the previous (3 or more).
 
-```\n```: newline.
-
-```\r```: carriage return.
+```{3,6}```: from **3 to 6** of the previous.
 
 ### Ranges
 
@@ -586,29 +570,7 @@ document.getElementById("demo").innerHTML=
 
 ```[^0-9]```: any character **except** in range **0 through 9.**
 
-### Quantifiers
-
-```*```: **0** or **more** of the previous (**greedy** - matches as much as possible).
-
-```?```: **0** or **more** of the previous (**lazy** - matches as few as possible).
-
-```+```: **1** or **more** of the previous.
-
-```{3}```: **exactly 3** of the previous.
-
-```{3,}```: **from 3** of the previous (3 or more).
-
-```{3,6}```: from **3 to 6** of the previous.
-
-### Anchors
-
-```^```: **start** of string.
-
-```$```: **end** of string.
-
 ### Grouping
-
-```|```: match either construct before **OR** after.
 
 ```(abc)```: isolates part of the full match to be later referred to by ID within the regex or the matches array (IDs start at 1).
 
