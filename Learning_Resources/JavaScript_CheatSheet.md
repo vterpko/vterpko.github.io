@@ -534,17 +534,25 @@ document.getElementById("demo").innerHTML=
 
 ```|```: match either construct before **OR** after.
 
-```(abc)```: isolates part of the full match to be later referred to by ID within the regex or the matches array (IDs start at 1).
-
 ### Anchors
 
 ```^```: **start** of string.
 
 ```$```: **end** of string.
 
-```(?=abc)```: the pattern to the left will be matched only if 'abc' **follows**, but will not actually include 'abc'.
+### Grouping
 
-```(?!abc)```: the pattern to the left will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
+```(abc)```: () - isolates part of the full match to be later referred to by ID within the regex or the matches array (IDs start at 1).
+
+```(?:ab{2}c{3})```: (?:) - allows you to **apply quantifiers** to part of your regex. Will match 'abbccc'.
+
+```(?=abc)```: (?=) - the pattern to the **left** will be matched only if 'abc' **follows**, but will not actually include 'abc'.
+
+```(?!abc)```: (?!) - the pattern to the **left** will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
+
+```(?<=abc)```: (?<=) - the pattern to the **right** will be matched only if 'abc' **follows**, but will not actually include 'abc'.
+
+```(?<!abc)```: (?<!) - the pattern to the **right** will be matched only if 'abc' **doesn't follow**, but will not actually include 'abc'.
 
 ### Quantifiers
 
@@ -554,13 +562,13 @@ document.getElementById("demo").innerHTML=
 
 ```+```: **1** or **more** of the previous.
 
+```a*?```: matches as few characters as possible. You can make any quantifier lazy by appending a **question mark** to it.
+
 ```{3}```: **exactly 3** of the previous.
 
 ```{3,}```: **from 3** of the previous (3 or more).
 
 ```{3,6}```: from **3 to 6** of the previous.
-
-```(?:ab{2}c{3})```: allows you to **apply quantifiers** to part of your regex. Will match 'abbccc'.
 
 ### Ranges
 
