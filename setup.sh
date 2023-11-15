@@ -27,7 +27,7 @@ GIT_DIRECTORY='~/git/'
 
 # 1. install packages
 install_apt_packages() {
-    sudo apt update -y && apt dist-upgrade -y
+    sudo apt update -y && sudo apt dist-upgrade -y
     sudo apt install -y ${PACKAGES_APT}
     sudo apt autoremove -y
 }
