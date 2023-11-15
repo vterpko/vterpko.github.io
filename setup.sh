@@ -11,6 +11,13 @@ DEPENDENCY_PACKAGES_APT="git
 
 DEPENDENCY_PACKAGES_PIP="ansible"
 
+# 2. clone git repos
+GIT_PULL_REPOS="https://github.com/vterpko/vterpko.github.io.git
+  "
+
+GIT_PUSH_REPOS=""
+
+GIT_DIRECTORY='~/git/'
 
 # ===================== FUNCTIONS =====================
 
@@ -32,10 +39,28 @@ install-pip-packages() {
     python3 -m pip install --upgrade --user ${DEPENDENCY_PACKAGES_PIP}
 }
 
+install-packages() {
+  update-apt-packages
+  install-apt-packages
+  bootstrap-pip
+  install-pip-packages
+}
+
+# 2. clone git repos
+
+clone-git-repos() {
+    [[ -e ${GIT_DIRECTORY} ]] || mkdir ${GIT_DIRECTORY}
+    cd ${GIT_DIRECTORY} &&
+      for REPO in ${GIT_PULL_REPOS} ${GIT_PUSH_REPOS}; do
+        git clone ${REPO}
+      done
+    cd
+}
+
 # ===================== MAIN =====================
 
 # 1. install packages
-update-apt-packages
-install-apt-packages
-bootstrap-pip
-install-pip-packages
+install-packages
+
+# 2. clone git repos
+clone-git-repos
