@@ -1,7 +1,9 @@
 # ===================== VARIABLES =====================
 
 # 1. install packages
-PACKAGES_APT="git
+PACKAGES_APT="bash
+  git
+  python3
   python3-pip
   htop
   make
@@ -25,8 +27,9 @@ GIT_DIRECTORY='~/git/'
 
 # 1. install packages
 install-apt-packages() {
-    apt update -y && apt dist-upgrade -y
-    apt install -y ${PACKAGES_APT}
+    sudo apt update -y && apt dist-upgrade -y
+    sudo apt install -y ${PACKAGES_APT}
+    sudo apt autoremove -y
 }
 
 install-pip-packages() {
@@ -41,7 +44,7 @@ install-packages() {
 # 2. clone git repos
 
 clone-git-repos() {
-    [[ -e ${GIT_DIRECTORY} ]] || mkdir ${GIT_DIRECTORY}
+    [ -e ${GIT_DIRECTORY} ] || mkdir ${GIT_DIRECTORY}
     cd ${GIT_DIRECTORY} &&
       for REPO in ${GIT_PULL_REPOS} ${GIT_PUSH_REPOS}; do
         git clone ${REPO}
