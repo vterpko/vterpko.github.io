@@ -37,8 +37,8 @@ install_pip_packages() {
 }
 
 install_packages() {
-  install-apt-packages
-  install-pip-packages
+  install_apt_packages
+  install_pip_packages
 }
 
 # 2. clone git repos
