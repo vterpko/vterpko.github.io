@@ -2,3 +2,4 @@ add colors
 add logging
 add cron
 link git repos resources to appropriate directories
+set up ide
