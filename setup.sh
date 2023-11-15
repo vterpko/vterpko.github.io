@@ -44,7 +44,7 @@ install_packages() {
 # 2. clone git repos
 
 clone_git_repos() {
-    [ -e ${GIT_DIRECTORY} ] || mkdir ${GIT_DIRECTORY}
+    [ -e ${GIT_DIRECTORY} ] && mkdir ${GIT_DIRECTORY}
     cd ${GIT_DIRECTORY} &&
       for REPO in ${GIT_PULL_REPOS} ${GIT_PUSH_REPOS}; do
         git clone ${REPO}
