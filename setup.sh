@@ -2,6 +2,7 @@
 
 # 1. install packages
 PACKAGES_APT="git
+  python3-pip
   htop
   make
   screen
@@ -9,40 +10,31 @@ PACKAGES_APT="git
   zip
   unzip"
 
-PACKAGES_PIP="ansible"
+PACKAGES_PIP="ansible
+  http"
 
 # 2. clone git repos
-GIT_PULL_REPOS="https://github.com/vterpko/vterpko.github.io.git
-  "
+GIT_PULL_REPOS=""
 
-GIT_PUSH_REPOS=""
+GIT_PUSH_REPOS="https://github.com/vterpko/vterpko.github.io.git
+  "
 
 GIT_DIRECTORY='~/git/'
 
 # ===================== FUNCTIONS =====================
 
 # 1. install packages
-update-apt-packages() {
-    apt update -y && apt dist-upgrade -y
-}
-
 install-apt-packages() {
+    apt update -y && apt dist-upgrade -y
     apt install -y ${PACKAGES_APT}
 }
 
-bootstrap-pip() {
-  python3 -m pip -V ||
-    { curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py; python3 get-pip.py --user; }
-}
-
 install-pip-packages() {
-    python3 -m pip install --upgrade --user ${PACKAGES_PIP}
+    pip install ${PACKAGES_PIP}
 }
 
 install-packages() {
-  update-apt-packages
   install-apt-packages
-  bootstrap-pip
   install-pip-packages
 }
 
