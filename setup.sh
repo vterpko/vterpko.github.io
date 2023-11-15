@@ -1,7 +1,7 @@
 # ===================== VARIABLES =====================
 
 # 1. install packages
-DEPENDENCY_PACKAGES_APT="git
+PACKAGES_APT="git
   htop
   make
   screen
@@ -9,7 +9,7 @@ DEPENDENCY_PACKAGES_APT="git
   zip
   unzip"
 
-DEPENDENCY_PACKAGES_PIP="ansible"
+PACKAGES_PIP="ansible"
 
 # 2. clone git repos
 GIT_PULL_REPOS="https://github.com/vterpko/vterpko.github.io.git
@@ -27,7 +27,7 @@ update-apt-packages() {
 }
 
 install-apt-packages() {
-    apt install -y ${DEPENDENCY_PACKAGES_APT}
+    apt install -y ${PACKAGES_APT}
 }
 
 bootstrap-pip() {
@@ -36,7 +36,7 @@ bootstrap-pip() {
 }
 
 install-pip-packages() {
-    python3 -m pip install --upgrade --user ${DEPENDENCY_PACKAGES_PIP}
+    python3 -m pip install --upgrade --user ${PACKAGES_PIP}
 }
 
 install-packages() {
