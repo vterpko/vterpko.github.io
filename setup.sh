@@ -55,7 +55,7 @@ clone_git_repos() {
 # ===================== MAIN =====================
 
 # 1. install packages
-install-packages
+install_packages
 
 # 2. clone git repos
-clone-git-repos
+clone_git_repos
