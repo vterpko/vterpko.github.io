@@ -26,24 +26,24 @@ GIT_DIRECTORY='~/git/'
 # ===================== FUNCTIONS =====================
 
 # 1. install packages
-install-apt-packages() {
+install_apt_packages() {
     sudo apt update -y && apt dist-upgrade -y
     sudo apt install -y ${PACKAGES_APT}
     sudo apt autoremove -y
 }
 
-install-pip-packages() {
+install_pip_packages() {
     pip install ${PACKAGES_PIP}
 }
 
-install-packages() {
+install_packages() {
   install-apt-packages
   install-pip-packages
 }
 
 # 2. clone git repos
 
-clone-git-repos() {
+clone_git_repos() {
     [ -e ${GIT_DIRECTORY} ] || mkdir ${GIT_DIRECTORY}
     cd ${GIT_DIRECTORY} &&
       for REPO in ${GIT_PULL_REPOS} ${GIT_PUSH_REPOS}; do
