@@ -3,10 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vadym Terpko</title>
+    <title>Vadym Terpko - Main</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background */
+        }
+        .glassmorphism-card {
+            background: rgba(31, 41, 55, 0.6); /* Semi-transparent dark gray */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            border: 1px solid rgba(55, 65, 81, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .main-heading-link {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .main-heading-link:hover {
+            color: #38bdf8; /* Light blue on hover */
+            transform: scale(1.03);
+        }
+        .subpage-link-item {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .subpage-link-item:hover {
+            background: rgba(55, 65, 81, 0.8); /* Darker on hover */
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
-<body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod eum, deleniti velit et dolores, amet veniam libero reprehenderit unde nulla similique natus enim. Maxime nostrum harum repellat eveniet magni et!</p>
+<body class="text-gray-200 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+
+    <div class="w-full max-w-3xl">
+        <header class="text-center mb-12">
+            <a href="https://www.youtube.com/@vadymterpko" target="_blank" rel="noopener noreferrer"
+               class="main-heading-link text-5xl sm:text-6xl font-bold text-gray-100 hover:text-sky-400 transition-colors duration-300 inline-block">
+                Vadym Terpko
+            </a>
+        </header>
+
+        <main class="w-full">
+            <h2 class="text-3xl font-semibold text-center text-sky-300 mb-8">Youtube Videos</h2>
+            <ul class="space-y-6">
+                <li>
+                    <a href="https://youtu.be/kGM9855tRy8?si=UOynjkA-Z6-N_U7P" class="subpage-link-item glassmorphism-card block p-6 rounded-xl hover:shadow-sky-500/50 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Cyberpunk-inspired Rice</h3>
+                        <p class="text-gray-400">A compilation of r/unixporn screenshots in Cyberpunk theme.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/dERdwXVI-gE?si=-3doy2cBPh7Yrw79" class="subpage-link-item glassmorphism-card block p-6 rounded-xl hover:shadow-sky-500/50 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Best MacOS Rice</h3>
+                        <p class="text-gray-400">A compilation of best MacOS customizations from r/unixporn.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/tjx1nIiIcgM?si=pPdj171bQ5VxAh3-" class="subpage-link-item glassmorphism-card block p-6 rounded-xl hover:shadow-sky-500/50 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Best TMUX Rice</h3>
+                        <p class="text-gray-400">A compilation of best TMUX customizations from r/unixporn.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/IniV0eA4nZA?si=-XhV5UW5Dio0iNr9" class="subpage-link-item glassmorphism-card block p-6 rounded-xl hover:shadow-sky-500/50 transition-all duration-300">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Best Vim Rice</h3>
+                        <p class="text-gray-400">A compilation of best Vim customizations from r/unixporn.</p>
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="text-center mt-16 text-gray-500 text-sm">
+            <p>&copy; <span id="currentYear"></span> Vadym Terpko. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>

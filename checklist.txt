@@ -1,0 +1,10 @@
+ - add the script to scripts/
+
+ - add a subpage from videos/_template.html
+ - - change the link to the video
+ - - change the heading of the subpage
+ - - change the deployment snippet
+ - - change the script snippet
+
+ - add a video section to the main page
+ - - point to the subpage
